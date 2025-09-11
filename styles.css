@@ -5,6 +5,10 @@ body{
     font-family: "Archivo Black", sans-serif;
 }
 
+.index2{
+    background-color: skyblue;
+}
+
 .container{
     max-width: 600px;
     margin: 150px auto 0 auto;
