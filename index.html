@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
@@ -10,12 +11,36 @@
     <title>Project Civciv</title>
 </head>
 <body>
-    <h1><span style="color: skyblue;">boy</span>or<span style="color: pink;">girl</span>.party</h1>
+    <header>
+        <div id="main-menu">
+            <h1><span style="color: skyblue;">boy</span>or<span style="color: pink;">girl</span>.party</h1>
+            <div id="menu-icon">
+                <div class="btn-menu"></div>
+                <div class="btn-menu"></div>
+                <div class="btn-menu"></div>
+            </div>
+        </div>
+        <div id="expanded-menu" style="display: none;">
+                <span class="material-symbols-outlined" style="font-size:43px; color:white;">event_upcoming</span>
+                <span class="material-symbols-outlined" style="font-size:43px; color:white;">shopping_cart</span>
+                <span class="material-symbols-outlined" style="font-size:43px; color:white;">redeem</span>
+                <span id="btn-close" class="material-symbols-outlined" style="font-size:43px; color:white;">close</span>
+        </div>
+    </header>
+    <!--<h1 class="title"><span style="color: skyblue;">boy</span>or<span style="color: pink;">girl</span>.party</h1>-->
     <div class="container">
         <h2>Ürününü kullan</h2>
         <label for="text" class="text-label">E-posta ile iletilen ürün kodunu ilgili alana gir:</label>
         <input type="text" id="text" name="text" placeholder="XXXXXXXX" maxlength="8">
         <button type="submit" id="btn-kullan">KULLAN</button>
+    </div>
+    <div id="menu-choices">
+        <ul>
+            <li>emre</li>
+            <li>reis</li>
+            <li>ali</li>
+            <li>veli</li>
+        </ul>
     </div>
     <script src="index.js"></script>
 </body>

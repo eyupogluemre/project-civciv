@@ -1,5 +1,10 @@
 const myInput = document.getElementById('text');
 const btnKullan = document.getElementById('btn-kullan');
+const menuIcon = document.getElementById('menu-icon')
+const menuChoices = document.getElementById('menu-choices')
+const mainMenu = document.getElementById('main-menu')
+const btnClose = document.getElementById('btn-close')
+const expandedMenu = document.getElementById('expanded-menu');
 
   myInput.addEventListener('input', function() {
     myInput.value = myInput.value.toUpperCase();
@@ -14,4 +19,15 @@ const btnKullan = document.getElementById('btn-kullan');
         myInput.value = ""
         alert('Hatalı bir kod girdin!')
     }
+  })
+
+  menuIcon.addEventListener('click', function(){
+        mainMenu.style.display = "none"
+        expandedMenu.style.display = "flex"
+        
+  })
+
+  btnClose.addEventListener('click', function(){
+        expandedMenu.style.display = "none"
+        mainMenu.style.display = "flex"
   })

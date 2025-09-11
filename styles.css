@@ -41,7 +41,7 @@ body{
     font-weight: bolder;
 }
 
-h1{
+.title{
     color: white;
     text-align: center;
     font-size: 40px;
@@ -54,5 +54,48 @@ h2{
 
 #btn-kullan:hover{
     opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-menu{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+#main-menu, #expanded-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#main-menu h1 {
+    margin: 0;
+    color: white;
+}
+
+#menu-icon:hover{
+    cursor: pointer;
+}
+
+#main-menu h1:hover {
+    cursor: pointer;
+}
+
+#menu-choices{
+    position: fixed;
+    background-color: pink;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    margin: 16px 20px 0 auto;
+    display: none;
+}
+
+.material-symbols-outlined:hover{
     cursor: pointer;
 }
