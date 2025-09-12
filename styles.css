@@ -17,7 +17,7 @@ body{
 
 .container2{
     max-width: 600px;
-    margin: 50px auto 0 auto;
+    margin: 150px auto 0 auto;
     text-align: center;
 }
 
@@ -77,14 +77,29 @@ h2{
 #main-menu{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    height: 48px;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-image: radial-gradient(circle, #203458, #1d2f50, #1a2a47, #17253f, #142037, #161c2f, #171828, #161421, #160f19, #130a12, #0c0508, #000000);
 }
 
 #expanded-menu{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-image: radial-gradient(circle, #203458, #1d2f50, #1a2a47, #17253f, #142037, #161c2f, #171828, #161421, #160f19, #130a12, #0c0508, #000000);
 }
 
 #main-menu h1 {
@@ -98,19 +113,6 @@ h2{
 
 #main-menu h1:hover {
     cursor: pointer;
-}
-
-#menu-choices{
-    position: fixed;
-    background-color: pink;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 200px;
-    height: 200px;
-    margin: 16px 20px 0 auto;
-    display: none;
 }
 
 .material-symbols-outlined:hover{
