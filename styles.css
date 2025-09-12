@@ -15,6 +15,12 @@ body{
     text-align: center;
 }
 
+.container2{
+    max-width: 600px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
 #text{
     display: block;
     margin: auto;
@@ -102,4 +108,34 @@ h2{
 
 .material-symbols-outlined:hover{
     cursor: pointer;
+}
+
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+p{
+    font-size: 20px;
+    color: #E5E4E2;
+    text-align: start;
+}
+
+.line{
+    border: 1px solid skyblue;
+}
+
+ul{
+    color: #E5E4E2;
+    padding: 0;
+    text-align: start;
+    list-style: none;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.list-title{
+    color: pink;
 }
