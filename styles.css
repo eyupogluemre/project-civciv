@@ -74,7 +74,14 @@ h2{
     margin: 6px 0;
 }
 
-#main-menu, #expanded-menu{
+#main-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 48px;
+}
+
+#expanded-menu{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -142,4 +149,9 @@ li{
 
 a{
     text-decoration: none;
+}
+
+.icon-style{
+    font-size: 43px;
+    color: white;
 }
