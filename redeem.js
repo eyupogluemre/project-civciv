@@ -4,7 +4,6 @@ const menuIcon = document.getElementById('menu-icon')
 const mainMenu = document.getElementById('main-menu')
 const btnClose = document.getElementById('btn-close')
 const expandedMenu = document.getElementById('expanded-menu');
-const mainLogo = document.getElementById('main-logo')
 
   myInput.addEventListener('input', function() {
     myInput.value = myInput.value.toUpperCase();
@@ -29,8 +28,4 @@ const mainLogo = document.getElementById('main-logo')
   btnClose.addEventListener('click', function(){
         expandedMenu.style.display = "none"
         mainMenu.style.display = "flex"
-  })
-
-  mainLogo.addEventListener('click', function(){
-      window.location.href = 'index.html'
   })
