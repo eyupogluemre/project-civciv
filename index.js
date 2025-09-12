@@ -3,11 +3,11 @@ const mainMenu = document.getElementById('main-menu')
 const btnClose = document.getElementById('btn-close')
 const expandedMenu = document.getElementById('expanded-menu');
 const btnRedeem = document.getElementById('btn-redeem')
+const mainLogo = document.getElementById('main-logo')
 
   menuIcon.addEventListener('click', function(){
         mainMenu.style.display = "none"
         expandedMenu.style.display = "flex"
-        
   })
 
   btnClose.addEventListener('click', function(){
@@ -17,4 +17,8 @@ const btnRedeem = document.getElementById('btn-redeem')
 
   btnRedeem.addEventListener('click', function(){
       window.location.href = 'redeem.html'
+  })
+
+  mainLogo.addEventListener('click', function(){
+      window.location.href = 'index.html'
   })
