@@ -85,7 +85,7 @@ h2{
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px;
-    background-color: black;
+    background-image: linear-gradient(to right, #87ceeb, #a9caf6, #d0c4f2, #efbfe2, #ffc0cb);
 }
 
 #expanded-menu{
@@ -99,7 +99,7 @@ h2{
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px;
-    background-color: black;
+    background-image: linear-gradient(to right, #87ceeb, #a9caf6, #d0c4f2, #efbfe2, #ffc0cb);
 }
 
 #main-menu h1 {
@@ -107,9 +107,7 @@ h2{
     color: white;
 }
 
-#menu-icon:hover{
-    cursor: pointer;
-}
+
 
 #main-menu h1:hover {
     cursor: pointer;
@@ -155,6 +153,15 @@ a{
 }
 
 .icon-style{
-    font-size: 43px;
+    font-size: 42px;
     color: white;
+}
+
+#img11{
+    width: 60px;
+}
+
+#main-title{
+    color: white;
+    font-size: 40px;
 }
