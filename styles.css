@@ -141,6 +141,11 @@ p{
     border: 1px solid skyblue;
 }
 
+.last-line{
+    border: 1px solid skyblue;
+    margin: 35px 0;
+}
+
 ul{
     color: #E5E4E2;
     padding: 0;
@@ -176,7 +181,7 @@ a{
 
 #footer{
     max-width: 600px;
-    margin: 20px auto 0 auto;
+    margin: 35px auto 0 auto;
     padding: 0 20px;
 }
 
@@ -199,7 +204,18 @@ a{
 }
 
 .footer-copyright{
-    text-align: center;
     margin: 0 auto;
     padding-bottom: 16px;
+}
+
+.pwa-container{
+    background-color: #0a1931;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+#pwa-container-text{
+    color: #E5E4E2;
+    text-align: center;
 }

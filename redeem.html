@@ -15,35 +15,37 @@
     <title>Ürününüzü Kullanın - Project Civciv</title>
 </head>
 <body>
-    <header>
-        <div id="main-menu">
-            <div>
-                <span class="material-symbols-outlined icon-style">event_upcoming</span>
+    <div id="main-content">
+        <header>
+            <div id="main-menu">
+                <div>
+                    <span class="material-symbols-outlined icon-style">event_upcoming</span>
+                </div>
+                <a href="index.html">
+                    <img id="img11" src="bog_logo_transparent.png" alt="">
+                </a>
+                <div id="menu-icon">
+                    <span class="material-symbols-outlined icon-style">apps</span>
+                </div>
             </div>
-            <a href="index.html">
-                <img id="img11" src="bog_logo_transparent.png" alt="">
-            </a>
-            <div id="menu-icon">
-                <span class="material-symbols-outlined icon-style">apps</span>
+            <div id="expanded-menu" style="display: none;">
+                <a href="index.html">
+                    <span class="material-symbols-outlined icon-style">home</span>
+                </a>
+                <a href="redeem.html">
+                    <span class="material-symbols-outlined" style="font-size:43px; color:white;">redeem</span>
+                </a>
+                <span class="material-symbols-outlined" style="font-size:43px; color:white;">shopping_cart</span>
+                <span class="material-symbols-outlined" style="font-size:43px; color:white;">language</span>
+                <span id="btn-close" class="material-symbols-outlined" style="font-size:43px; color:white;">close</span>
             </div>
+        </header>
+        <div class="container">
+            <h2>Ürününüzü Kullanın</h2>
+            <label for="text" class="text-label">E-posta ile iletilen ürün kodunu ilgili alana girin:</label>
+            <input type="text" id="text" name="text" placeholder="XXXXXXXX" maxlength="8">
+            <button type="submit" id="btn-generic">Kullan</button>
         </div>
-        <div id="expanded-menu" style="display: none;">
-            <a href="index.html">
-                <span class="material-symbols-outlined icon-style">home</span>
-            </a>
-            <a href="redeem.html">
-                <span class="material-symbols-outlined" style="font-size:43px; color:white;">redeem</span>
-            </a>
-            <span class="material-symbols-outlined" style="font-size:43px; color:white;">shopping_cart</span>
-            <span class="material-symbols-outlined" style="font-size:43px; color:white;">language</span>
-            <span id="btn-close" class="material-symbols-outlined" style="font-size:43px; color:white;">close</span>
-        </div>
-    </header>
-    <div class="container">
-        <h2>Ürününüzü Kullanın</h2>
-        <label for="text" class="text-label">E-posta ile iletilen ürün kodunu ilgili alana girin:</label>
-        <input type="text" id="text" name="text" placeholder="XXXXXXXX" maxlength="8">
-        <button type="submit" id="btn-generic">Kullan</button>
     </div>
     <script src="redeem.js"></script>
 </body>
