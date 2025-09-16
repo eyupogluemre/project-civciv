@@ -1,8 +1,11 @@
 body{
     margin: 0;
-    padding: 0 20px;
     background-image: radial-gradient(circle, #0a1931, #0f1c37, #14203e, #192344, #1f264a, #24284e, #292953, #2e2b57, #332c5a, #392c5d, #3f2c60, #452c63);
     font-family: "Archivo Black", sans-serif;
+}
+
+#main-content{
+    padding: 0 20px;
 }
 
 .index2{
@@ -19,6 +22,10 @@ body{
     max-width: 600px;
     margin: 80px auto 0 auto;
     text-align: center;
+}
+
+footer{
+    background-color: #0A1931;
 }
 
 #text{
@@ -42,7 +49,7 @@ body{
     margin-bottom: 5px;
 }
 
-#btn-kullan{
+#btn-generic{
     margin-top: 5px;
     padding: 0;
     width: 100%;
@@ -65,7 +72,12 @@ h2{
     text-align: start;
 }
 
-#btn-kullan:hover{
+h3{
+    color: pink;
+    text-align: start;
+}
+
+#btn-generic:hover{
     opacity: 0.8;
     cursor: pointer;
 }
@@ -160,4 +172,34 @@ a{
 #main-title{
     color: white;
     font-size: 40px;
+}
+
+#footer{
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    padding: 0 20px;
+}
+
+.footer-datas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 0 0;
+}
+
+.footer-text{
+    font-size: 16px;
+    margin: 0;
+}
+
+#footer-icon{
+    font-size: 22px;
+    color: #E5E4E2;
+    cursor: auto;
+}
+
+.footer-copyright{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 16px;
 }

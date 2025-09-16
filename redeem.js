@@ -1,5 +1,5 @@
 const myInput = document.getElementById('text');
-const btnKullan = document.getElementById('btn-kullan');
+const btnKullan = document.getElementById('btn-generic');
 const menuIcon = document.getElementById('menu-icon')
 const mainMenu = document.getElementById('main-menu')
 const btnClose = document.getElementById('btn-close')
@@ -13,10 +13,10 @@ const expandedMenu = document.getElementById('expanded-menu');
     if(myInput.value === "AABB1997"){
         window.location.href = 'index2.html'
     } else if(myInput.value === ""){
-        alert('Gerekli alanı doldur!')
+        alert('Gerekli alanı doldurun!')
     } else {
         myInput.value = ""
-        alert('Hatalı bir kod girdin!')
+        alert('Hatalı bir kod girdiniz!')
     }
   })
 
