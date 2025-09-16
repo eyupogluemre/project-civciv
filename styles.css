@@ -189,7 +189,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0 0 0;
 }
 
 .footer-text{
@@ -205,7 +204,7 @@ a{
 
 .footer-copyright{
     margin: 0 auto;
-    padding-bottom: 16px;
+    padding: 16px 0;
 }
 
 .pwa-container{
@@ -218,4 +217,8 @@ a{
 #pwa-container-text{
     color: #E5E4E2;
     text-align: center;
+}
+
+.footer-firt-rw{
+    padding: 16px 0 0 0;
 }
