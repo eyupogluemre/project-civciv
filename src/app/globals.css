@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --bg-navy: #0a1931;
+  --bg-surface: rgba(13, 29, 58, 0.82);
+  --boy-sky: #87ceeb;
+  --boy-vivid: #38bdf8;
+  --girl-pink: #ffc0cb;
+  --girl-vivid: #f472b6;
+  --text-main: #f1f5f9;
+  --text-muted: #cbd5e1;
+}
+
+@theme inline {
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-archivo-black), Impact, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0a1931;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  background-color: #0a1931;
+  background-image: radial-gradient(
+    ellipse at top center,
+    #1b2a52 0%,
+    #11203e 45%,
+    #0a1931 85%,
+    #241d46 100%
+  );
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.015em;
+}
+
+.btn-party {
+  background-image: linear-gradient(
+    90deg,
+    #87ceeb 0%,
+    #a9caf6 28%,
+    #d0c4f2 52%,
+    #efbfe2 76%,
+    #ffc0cb 100%
+  );
+  color: #0a1931;
+  font-weight: 800;
+  transition: transform 140ms ease, filter 160ms ease, box-shadow 160ms ease;
+  box-shadow: 0 8px 24px rgba(135, 206, 235, 0.16);
+}
+
+.btn-party:hover:not(:disabled) {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(255, 192, 203, 0.24);
+}
+
+.btn-party:active:not(:disabled) {
+  transform: translateY(0px) scale(0.99);
+}
+
+.btn-party:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
+
+.surface-card {
+  background: var(--bg-surface);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 14px 36px rgba(2, 8, 23, 0.42);
+}
+
+@keyframes pulseScale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+.animate-countdown-pop {
+  animation: pulseScale 0.9s ease-in-out infinite;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #0a1931 !important;
+  }
+}
